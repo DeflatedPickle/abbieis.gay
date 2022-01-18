@@ -3,13 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    devtool: false,
-    mode: 'none',
-    target: "web",
     entry: "./src/coffee/index.coffee",
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js"
+        filename: "bundle.js",
+        clean: true
     },
     module: {
         rules: [
@@ -53,9 +51,5 @@ module.exports = {
     ],
     resolve: {
         extensions: [ '.coffee', '.js' ],
-    },
-    devServer: {
-        port: 8080,
-        liveReload: true,
-    },
+    }
 };
