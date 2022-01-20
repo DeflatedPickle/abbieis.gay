@@ -19,13 +19,44 @@
     left: 15%;
 
     background: white
+    color: black
+
+    --shadow-offset: 30
+    --shadow-type: 0
 
 #title
-    padding: 8px
+    margin: 8px
     font-size: 32px
     font-family: 'Roboto Mono', sans-serif;
 
 #description
-    padding: 8px 32px
+    margin: 0px 32px
+    padding: 8px
     font-size: 24px
     font-family: 'Inconsolata', sans-serif;
+
+#links
+    display: flex
+
+    position: absolute
+    bottom: 0
+
+    margin: 8px
+    padding: 4px
+
+.button
+    width: 40px
+    height: 40px
+    
+    margin: 8px
+
+    color: black
+    cursor: pointer
+
+    transition: transform 150ms ease-in-out
+
+    --shadow-offset: 8
+    --shadow-type: 1
+
+.button:hover
+    transform: scale(1.2)

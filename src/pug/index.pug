@@ -13,8 +13,15 @@ html
         )
 
     body
+        include button
+
         div#back
 
         div#info.shadow
             div#title abbie.pet
             div#description hi i make things
+
+            div#links
+                +button("github", "abbieisagit.cyou")
+                +button("twitter", "abbieisatwit.cyou")
+                +button("discord", "abbieisadisc.cyou")
