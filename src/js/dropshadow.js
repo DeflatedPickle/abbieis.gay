@@ -25,11 +25,12 @@ const paint = (p, x, y) => {
   const ny = (my - py) / (r.bottom - r.top + 2 * o); 
   
   requestAnimationFrame(() => {
-    if (shadow_type == 0) {
-      p.style.boxShadow = `${-1 * nx * o}px ${-1 * ny * o}px black`;
-    } else if (shadow_type == 1) {
-      p.style.filter = `drop-shadow(${-1 * nx * o}px ${-1 * ny * o}px 0px rgba(0, 0, 0, 0.1))`
-    }
+    p.style.boxShadow = `${-1 * nx * o}px ${-1 * ny * o}px black`;
+    
+    p.childNodes.forEach((d) => {
+      const o2 = Math.min(r.width, r.height, 12);
+      d.style.filter = `drop-shadow(${-1 * nx * o2}px ${-1 * ny * o2}px 0px rgba(0, 0, 0, 0.1))`
+    });
   });
 };
 

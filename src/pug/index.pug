@@ -14,12 +14,18 @@ html
 
     body
         include button
+        include repo
 
         div#back
 
         div#info.shadow
             div#title abbie.pet
             div#description
+
+            div.carousel
+                +repo("rawky")
+                +repo("haruhi")
+                +repo("tosuto")
 
             div#bottom
                 div#links

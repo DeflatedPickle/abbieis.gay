@@ -1,4 +1,4 @@
-import Typed from 'typed.js';
+import Typed from 'typed.js'
 
 list = _.sample([
     "hi i make things",

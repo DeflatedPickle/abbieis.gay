@@ -20,6 +20,13 @@ module.exports = {
                 ]
             },
             {
+                test:/\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
                 test: /\.sass$/,
                 use: [
                     "style-loader",
@@ -51,6 +58,7 @@ module.exports = {
         }),
         new webpack.ProvidePlugin({
             _: 'lodash',
+            $: 'jquery'
         }),
     ],
     resolve: {

@@ -3,6 +3,7 @@ require("../sass/index.sass")
 
 # scripts
 require("./typed.coffee")
+require("./flick.coffee")
 require("../js/dropshadow.js")
 
 # icons

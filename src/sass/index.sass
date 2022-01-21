@@ -30,7 +30,7 @@
 #title
     margin: 8px
     font-size: 32px
-    font-family: 'Roboto Mono', sans-serif;
+    font-family: 'Roboto Mono', sans-serif
 
 #description
     display: inline
@@ -39,12 +39,12 @@
     padding-left: 8px
 
     font-size: 24px
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Inconsolata', sans-serif
 
 #links
     display: flex
 
-    position: absolute
+    position: relative
     bottom: 0
 
     margin: 8px
@@ -66,3 +66,29 @@
 
 .button:hover
     transform: scale(1.2)
+
+.carousel
+    height: 60%
+
+    margin-top: 12px
+    margin-bottom: 40px
+
+    --shadow-offset: 12
+    --shadow-type: 0
+
+.carousel-cell
+    width: 66%
+    height: 90%
+
+    padding: 8px
+    margin-right: 10px
+
+    border: solid
+
+    counter-increment: carousel-cell
+
+    .title
+        font-family: 'Roboto Mono', sans-serif
+
+    .description
+        font-family: 'Inconsolata', sans-serif
