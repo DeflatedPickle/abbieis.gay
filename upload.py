@@ -54,12 +54,12 @@ if __name__ == "__main__":
     # for f in files:
     #     os.remove(f)
 
-    # Pushing to the GitHub Pages branch
-    print(green("Changing back to the master branch..."))
+    # Pushing to the GitHub
+    print(green("Pushing to the GitHub..."))
     subprocess.call(["git push origin built"], shell=True)
 
-    # Change to the master branch
-    print(green("Changing back to the master branch..."))
-    subprocess.call(["git checkout master"], shell=True)
+    # Change to the main branch
+    print(green("Changing back to the main branch..."))
+    subprocess.call(["git checkout main"], shell=True)
 
     print(green("Finished uploading the site, exiting"))
