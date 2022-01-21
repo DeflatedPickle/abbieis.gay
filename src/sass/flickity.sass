@@ -1,8 +1,15 @@
 .flickity-button 
   background: transparent
 
-.flickity-button:hover
-  background: transparent
+  &:hover
+    background: transparent
+
+  .flickity-button-icon
+    transition: transform 150ms ease-in-out
+
+    &:hover
+      transform: scale(1.2)
+    
 
 .flickity-page-dots
   .dot 
@@ -15,6 +22,11 @@
 
     background: transparent
     border: 2px solid black
+
+    transition: transform 150ms ease-in-out
+
+    &:hover
+      transform: scale(1.2)
 
   .is-selected
     background: black

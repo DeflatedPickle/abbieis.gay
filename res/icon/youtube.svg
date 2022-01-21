@@ -1,7 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="256px" height="180px" viewBox="0 0 256 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-    <g>
-				<path d="M250.346231,28.0746923 C247.358133,17.0320558 238.732098,8.40602109 227.689461,5.41792308 C207.823743,0 127.868333,0 127.868333,0 C127.868333,0 47.9129229,0.164179487 28.0472049,5.58210256 C17.0045684,8.57020058 8.37853373,17.1962353 5.39043571,28.2388718 C-0.618533519,63.5374615 -2.94988224,117.322662 5.5546152,151.209308 C8.54271322,162.251944 17.1687479,170.877979 28.2113844,173.866077 C48.0771024,179.284 128.032513,179.284 128.032513,179.284 C128.032513,179.284 207.987923,179.284 227.853641,173.866077 C238.896277,170.877979 247.522312,162.251944 250.51041,151.209308 C256.847738,115.861464 258.801474,62.1091 250.346231,28.0746923 Z" fill="#161614"></path>
-				<polygon fill="#FFFFFF" points="102.420513 128.06 168.749025 89.642 102.420513 51.224"></polygon>
-		</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256px"
+   height="256px"
+   viewBox="0 0 256 256"
+   version="0 0 256 "
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="youtube.svg">
+  <metadata
+     id="metadata294">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs292" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1016"
+     id="namedview290"
+     showgrid="false"
+     inkscape:zoom="1.6283098"
+     inkscape:cx="-0.37606161"
+     inkscape:cy="64.874299"
+     inkscape:window-x="1920"
+     inkscape:window-y="34"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g286" />
+  <g
+     id="g286">
+    <path
+       id="path282"
+       d="m 128.60284,34.930974 c 0,0 -79.956554,0.16411 -99.822272,5.58203 -11.042637,2.9881 -19.6681518,11.61362 -22.6562498,22.65625 -6.00896925,35.29859 -8.3404349,89.084056 0.1640625,122.970696 2.988098,11.04264 11.6136133,19.66816 22.6562503,22.65625 19.865718,5.41793 99.822269,5.41797 99.822269,5.41797 0,0 79.9546,-4e-5 99.82032,-5.41797 11.04263,-2.98809 19.66815,-11.61361 22.65625,-22.65625 6.33732,-35.34784 8.29118,-89.100346 -0.16407,-123.134756 -2.98809,-11.04264 -11.61361,-19.66815 -22.65625,-22.65625 -19.86571,-5.41792 -99.82031,-5.41797 -99.82031,-5.41797 z m -25.44922,51.22461 66.33008,38.417966 -66.33008,38.41797 z" />
+  </g>
 </svg>

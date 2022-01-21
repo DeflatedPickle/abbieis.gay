@@ -1,7 +1,8 @@
 include button
 
-mixin repo(name="", link="")
+mixin repo(name="", desc="")
     div.carousel-cell
         div.title= name
+        div.description= desc
 
-        +button("github", "")
+        +button("github", `github.com/deflatedpickle/${name}`)(class="link")

@@ -15,6 +15,9 @@
     background: url("../../res/background.jpg")
 
 #info
+    display: flex
+    flex-direction: column
+
     position: fixed
     width: 75%
     height: 75%
@@ -77,6 +80,10 @@
     --shadow-type: 0
 
 .carousel-cell
+    display: grid
+    grid-template-rows: max-content auto
+    grid-template-columns: auto max-content
+
     width: 66%
     height: 90%
 
@@ -88,7 +95,18 @@
     counter-increment: carousel-cell
 
     .title
+        grid-column: 1
+        grid-row: 1
+
+        font-size: 18px
         font-family: 'Roboto Mono', sans-serif
 
     .description
+        grid-column: 1 / 2
+        grid-row: 2
+
         font-family: 'Inconsolata', sans-serif
+
+    .link
+        grid-column: 2
+        grid-row: 1
