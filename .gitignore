@@ -61,7 +61,7 @@ typings/
 .next
 
 # Webpack files
-dist/
+# dist/
 
 # IntelliJ project files
 .idea
