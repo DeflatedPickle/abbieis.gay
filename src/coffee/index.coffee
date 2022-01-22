@@ -13,3 +13,6 @@ require("../../res/icon/discord.svg")
 require("../../res/icon/instagram.svg")
 require("../../res/icon/reddit.svg")
 require("../../res/icon/youtube.svg")
+
+require("../../res/icon/curseforge.svg")
+require("../../res/icon/modrinth.svg")
