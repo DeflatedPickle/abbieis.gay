@@ -34,8 +34,13 @@ const paint = (p, x, y) => {
   });
 };
 
-shadows.forEach((v, k, p) => 
-  document.addEventListener('mousemove', (e) => paint(v, e.clientX, e.clientY), {
-    passive: true
-  })
+shadows.forEach((v, k, p) => {
+    document.addEventListener('DOMContentLoaded', (e) => paint(v, 0, 0), {
+      passive: true
+    });
+
+    document.addEventListener('mousemove', (e) => paint(v, e.clientX, e.clientY), {
+      passive: true
+    });
+  }
 )

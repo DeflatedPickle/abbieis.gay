@@ -2,9 +2,13 @@
 require("../sass/index.sass")
 
 # scripts
+    # coffeescript
 require("./typed.coffee")
 require("./flick.coffee")
+require("./background.coffee")
+    # javascript
 require("../js/dropshadow.js")
+require("../js/images.js")
 
 # icons
 require("../../res/icon/github.svg")
