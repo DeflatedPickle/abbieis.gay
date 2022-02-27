@@ -4,6 +4,7 @@
   "description": "A website",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.17.4",
     "babel-loader": "^8.2.3",
     "coffee-loader": "^3.0.0",
     "css-loader": "^6.5.1",

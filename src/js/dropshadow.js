@@ -22,7 +22,7 @@ const paint = (p, x, y) => {
   const px = r.right - r.width / 2; // compute element bb midpoints.
   const py = r.bottom - r.height / 2;
   const nx = (mx - px) / (r.right - r.left + 2 * o); // project mouse position relative to the bounding box to [-.5, .5];
-  const ny = (my - py) / (r.bottom - r.top + 2 * o); 
+  const ny = (my - py) / (r.bottom - r.top + 2 * o);
   
   requestAnimationFrame(() => {
     p.style.boxShadow = `${-1 * nx * o}px ${-1 * ny * o}px black`;

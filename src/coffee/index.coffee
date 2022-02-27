@@ -9,6 +9,7 @@ require("./background.coffee")
     # javascript
 require("../js/dropshadow.js")
 require("../js/images.js")
+require("../js/parallax.js")
 
 # icons
 require("../../res/icon/github.svg")
