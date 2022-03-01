@@ -1,13 +1,22 @@
 const path = require("path");
+const fs = require('fs');
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const pages =
+    fs
+        .readdirSync(path.resolve(__dirname, 'src/pug/'))
+        .filter(name => name.endsWith('.pug'))
+
 module.exports = {
-    entry: "./src/coffee/index.coffee",
+    entry: {
+        index: "./src/coffee/index.coffee",
+        portfolio: "./src/coffee/portfolio.coffee"
+    },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js",
+        filename: "[name].js",
         clean: true
     },
     module: {
@@ -46,13 +55,16 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
+        ...pages.map(page => new HtmlWebpackPlugin({
             minify: {
                 collapseWhitespace: true
             },
+            inject: true,
             hash: true,
-            template: "./src/pug/index.pug"
-        }),
+            template: `${path.resolve(__dirname, "src")}/pug/${page}`,
+            filename: `${path.parse(page).name}.html`,
+            chunks: `${path.parse(page).name}`
+        })),
         new MiniCssExtractPlugin({
             filename: "bundle.css"
         }),

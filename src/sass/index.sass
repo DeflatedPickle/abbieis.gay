@@ -13,6 +13,8 @@
     top: 0
     left: 0
 
+    z-index: -1
+
     filter: blur(50px)
 
 #info
@@ -23,13 +25,12 @@
     width: 75%
     height: 75%
     top: 10%;
-    left: 15%;
+    left: 15%
 
     background: white
     color: black
 
     --shadow-offset: 30
-    --shadow-type: 0
 
 #title
     margin: 8px
@@ -74,10 +75,9 @@
     transition: transform 150ms ease-in-out
 
     --shadow-offset: 8
-    --shadow-type: 1
 
-.button:hover
-    transform: scale(1.2)
+    &:hover
+        transform: scale(1.2)
 
 .carousel
     height: 60%
@@ -86,14 +86,13 @@
     margin-bottom: 32px
 
     --shadow-offset: 12
-    --shadow-type: 0
 
 .carousel-cell
     display: grid
     grid-template-rows: max-content auto
     grid-template-columns: auto max-content
 
-    width: 66%
+    width: 60%
     height: 90%
 
     padding: 8px
@@ -119,3 +118,34 @@
     .link
         grid-column: 2
         grid-row: 1
+
+.filter
+    display: flex
+    flex-direction: row
+
+    width: 90%
+    height: 100px
+
+    margin: 10px
+
+    background: white
+    color: black
+
+    --shadow-offset: 20
+
+.grid-item
+    float: left
+
+    width: 200px
+    height: 200px
+
+    margin: 5px
+    padding: 5px
+
+    border: solid
+
+    transition: transform 150ms ease-in-out
+
+    &:hover
+        transform: scale(1.02)
+

@@ -3,21 +3,24 @@ require("../sass/index.sass")
 
 # scripts
     # coffeescript
-require("./typed.coffee")
-require("./flick.coffee")
-require("./background.coffee")
+require("./util/typed.coffee")
+require("./util/flickity.coffee")
+require("./util/background.coffee")
     # javascript
 require("../js/dropshadow.js")
 require("../js/images.js")
 require("../js/parallax.js")
 
 # icons
-require("../../res/icon/github.svg")
-require("../../res/icon/twitter.svg")
-require("../../res/icon/discord.svg")
-require("../../res/icon/instagram.svg")
-require("../../res/icon/reddit.svg")
-require("../../res/icon/youtube.svg")
+require("../../res/logo/github.svg")
+require("../../res/logo/twitter.svg")
+require("../../res/logo/discord.svg")
+require("../../res/logo/instagram.svg")
+require("../../res/logo/reddit.svg")
+require("../../res/logo/youtube.svg")
 
-require("../../res/icon/curseforge.svg")
-require("../../res/icon/modrinth.svg")
+require("../../res/logo/curseforge.svg")
+require("../../res/logo/modrinth.svg")
+
+require("../../res/icon/asterisk.svg")
+require("../../res/icon/gamepad.svg")

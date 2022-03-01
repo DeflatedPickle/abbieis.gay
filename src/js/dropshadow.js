@@ -13,7 +13,6 @@ const paint = (p, x, y) => {
   const r = p.getBoundingClientRect();
 
   const max_offset = getComputedStyle(p, null).getPropertyValue("--shadow-offset") ?? 0;
-  const shadow_type = getComputedStyle(p, null).getPropertyValue("--shadow-type") ?? 0;
 
   const o = Math.min(r.width, r.height, max_offset); // compute max shadow offset
   
