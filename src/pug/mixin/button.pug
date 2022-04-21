@@ -1,4 +1,7 @@
-mixin button(image="", link="", type="logo")
+mixin button(field="", link="", type="logo")
     div&attributes(attributes)
         a(href=`https://${link}`)
-            img(src=`../../res/${type}/${image}.svg`).button
+            if (type != "")
+                img(src=`../../res/${type}/${field}.svg`).button
+            else
+                div.title.button= field

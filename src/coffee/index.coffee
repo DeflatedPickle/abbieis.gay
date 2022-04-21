@@ -1,5 +1,6 @@
 # style
 require("../sass/index.sass")
+require("../sass/old.sass")
 
 # scripts
     # coffeescript
@@ -21,6 +22,3 @@ require("../../res/logo/youtube.svg")
 
 require("../../res/logo/curseforge.svg")
 require("../../res/logo/modrinth.svg")
-
-require("../../res/icon/asterisk.svg")
-require("../../res/icon/gamepad.svg")

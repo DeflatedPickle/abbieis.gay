@@ -1,8 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono:500|Work+Sans:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono:500|Work+Sans:300&display=swap')
 
 *
     user-select: none
-    overflow: hidden
+
+body
+  overflow: hidden
+
+::-webkit-scrollbar
+  width: 10px
+
+::-webkit-scrollbar-track
+  background: #f1f1f1
+
+::-webkit-scrollbar-thumb
+  background: #888
+
+::-webkit-scrollbar-thumb:hover
+  background: #555
 
 #back
     position: absolute
@@ -16,35 +30,6 @@
     z-index: -1
 
     filter: blur(50px)
-
-#info
-    display: flex
-    flex-direction: column
-
-    position: fixed
-    width: 75%
-    height: 75%
-    top: 10%;
-    left: 15%
-
-    background: white
-    color: black
-
-    --shadow-offset: 30
-
-#title
-    margin: 8px
-    font-size: 32px
-    font-family: 'Roboto Mono', sans-serif
-
-#description
-    display: inline
-
-    margin-left: 32px
-    padding-left: 8px
-
-    font-size: 24px
-    font-family: 'Inconsolata', sans-serif
 
 #bottom
     display: flex
@@ -79,73 +64,25 @@
     &:hover
         transform: scale(1.2)
 
-.carousel
-    height: 60%
+#text-404
+  position: fixed
 
-    margin-top: 32px
-    margin-bottom: 32px
+  top: 260px
+  left: 220px
 
-    --shadow-offset: 12
+  color: white
 
-.carousel-cell
-    display: grid
-    grid-template-rows: max-content auto
-    grid-template-columns: auto max-content
+  text-transform: uppercase
+  -webkit-text-stroke: 4px black
 
-    width: 60%
-    height: 90%
+  font-size: 72px
+  font-family: Impact, fantasy
 
-    padding: 8px
-    margin-right: 10px
+#img-404
+  position: fixed
 
-    border: solid
+  top: 135px
+  left: 170px
 
-    counter-increment: carousel-cell
-
-    .title
-        grid-column: 1
-        grid-row: 1
-
-        font-size: 18px
-        font-family: 'Roboto Mono', sans-serif
-
-    .description
-        grid-column: 1 / 2
-        grid-row: 2
-
-        font-family: 'Inconsolata', sans-serif
-
-    .link
-        grid-column: 2
-        grid-row: 1
-
-.filter
-    display: flex
-    flex-direction: row
-
-    width: 90%
-    height: 100px
-
-    margin: 10px
-
-    background: white
-    color: black
-
-    --shadow-offset: 20
-
-.grid-item
-    float: left
-
-    width: 200px
-    height: 200px
-
-    margin: 5px
-    padding: 5px
-
-    border: solid
-
-    transition: transform 150ms ease-in-out
-
-    &:hover
-        transform: scale(1.02)
-
+  &::before
+    content: url("../../res/cringe/8597142342f932352cbb4c6a01423c66.jpg")

@@ -30,3 +30,43 @@
 
   .is-selected
     background: black
+
+.carousel
+    height: 60%
+
+    margin-top: 32px
+    margin-bottom: 32px
+
+    --shadow-offset: 12
+
+.carousel-cell
+    display: grid
+    grid-template-rows: max-content auto
+    grid-template-columns: auto max-content
+
+    width: 60%
+    height: 90%
+
+    padding: 8px
+    margin-right: 10px
+
+    border: solid
+
+    counter-increment: carousel-cell
+
+    .title
+        grid-column: 1
+        grid-row: 1
+
+        font-size: 18px
+        font-family: 'Roboto Mono', sans-serif
+
+    .description
+        grid-column: 1 / 2
+        grid-row: 2
+
+        font-family: 'Inconsolata', sans-serif
+
+    .link
+        grid-column: 2
+        grid-row: 1

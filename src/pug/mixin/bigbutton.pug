@@ -1,0 +1,7 @@
+mixin bigbutton(field="", link="", type="logo")
+    div&attributes(attributes)
+        a(href=`https://${link}`)
+            if (type != "")
+                img(src=`../../res/${type}/${field}.svg`).aml-button
+            else
+                div.title.aml-button= field

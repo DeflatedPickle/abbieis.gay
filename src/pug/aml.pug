@@ -1,0 +1,50 @@
+doctype html
+
+html
+    head
+        title="all my links"
+        meta(charset="UTF-8")
+
+        script(
+        async data-href="https://github.com/DeflatedPickle/abbie.pet"
+        data-label="Pet me"
+        data-target="_blank"
+        src="https://unpkg.com/github-corners@latest/dist/embed.min.js"
+        )
+
+    body
+        include mixin/bigbutton
+        include mixin/repo
+
+        div#back.parallax
+
+        div#aml-info.shadow
+            div#me
+            div#title abbie's links
+            div#typed
+                div#description
+            
+            div#text hello! im abbie :) i write code for fun! <br> feel free to checkout some of the things ive made below :D
+            
+            div#aml-links
+              div.line code
+              div#code.section
+                +bigbutton("github-colour", "abbieisagit.cyou")
+                +bigbutton("gitlab-colour", "gitlab.com/DeflatedPickle")
+                
+              div.line minecraft mods
+              div#mc-mods.section
+                +bigbutton("curseforge", "curseforge.com/members/deflatedpickle/projects")
+                +bigbutton("modrinth-colour", "modrinth.com/user/xgtIFLbS")
+                
+              div.line funding
+              div#funding.section
+                +bigbutton("patreon-colour", "patreon.com/DeflatedPickle")
+                +bigbutton("kofi-colour", "ko-fi.com/deflatedpickle")
+              
+              div.line social
+              div#social.section
+                +bigbutton("youtube-colour", "youtube.com/channel/UC2h_BordXu568_EnPn-lh9g")
+                +bigbutton("twitter-colour", "abbieisatwit.cyou")
+                +bigbutton("instagram-colour", "instagram.com/applecrumbledoor/")
+                +bigbutton("reddit-colour", "reddit.com/user/applecrumbledoor")

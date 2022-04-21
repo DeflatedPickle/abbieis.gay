@@ -5,9 +5,11 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.17.4",
+    "@octokit/rest": "^18.12.0",
     "@taufik-nurrohman/tag-picker": "^3.4.9",
     "babel-loader": "^8.2.3",
     "coffee-loader": "^3.0.0",
+    "coffeescript": "^2.6.1",
     "css-loader": "^6.5.1",
     "extract-loader": "^5.1.0",
     "file-loader": "^6.2.0",

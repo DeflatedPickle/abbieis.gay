@@ -12,7 +12,7 @@ const pages =
 module.exports = {
     entry: {
         index: "./src/coffee/index.coffee",
-        portfolio: "./src/coffee/portfolio.coffee"
+        aml: "./src/coffee/aml.coffee"
     },
     output: {
         path: path.resolve(__dirname, "dist"),
