@@ -1,0 +1,39 @@
+doctype html
+
+html
+    head
+        title="hrtiddies"
+        meta(charset="UTF-8")
+
+        script(
+        async data-href="https://github.com/DeflatedPickle/abbie.pet"
+        data-label="Pet me"
+        data-target="_blank"
+        src="https://unpkg.com/github-corners@latest/dist/embed.min.js"
+        )
+
+    body
+      include mixin/widebutton
+    
+      div#back.parallax
+      
+      div#help.centre.shadow
+        div.box#talk
+          p.line talk
+          
+          +widebutton("transdiy", "reddit.com/r/TransDIY/", "reddit-colour")
+          +widebutton("hrtgen", "boards.4channel.org/lgbt/thread/25508689", "4chan-colour")
+          +widebutton("mtfhrt", "groups.io/g/MTFHRT/", "groups-colour")
+          
+        div.box#learn
+          p.line learn
+          
+          +widebutton("transfem guide", "diyhrt.github.io/transfem", "github")
+          +widebutton("diy hrt wiki", "diytrans.wiki/Main_Page", "mediawiki-colour")
+          +widebutton("transfem science", "transfemscience.org/articles/", "tfs-colour")
+          +widebutton("trans care", "d31kydh6n6r5j5.cloudfront.net/uploads/sites/161/2019/08/hormones_MTF.pdf", "tc-colour")
+          
+        div.box#buy
+          p.line buy
+          
+          +widebutton("hrt cafe", "hrt.cafe", "hrtcafe-colour")

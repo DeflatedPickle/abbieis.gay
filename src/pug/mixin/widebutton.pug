@@ -1,0 +1,6 @@
+mixin widebutton(field="", link="", community="")
+  div&attributes(attributes).wide-button
+    a(href=`https://${link}`)
+      div
+        img(src=`../../res/logo/${community}.svg`)
+        div.title= field

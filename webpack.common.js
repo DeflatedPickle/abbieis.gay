@@ -10,10 +10,7 @@ const pages =
         .filter(name => name.endsWith('.pug'))
 
 module.exports = {
-    entry: {
-        index: "./src/coffee/index.coffee",
-        aml: "./src/coffee/aml.coffee"
-    },
+    entry: "./src/coffee/index.coffee",
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].js",
@@ -75,5 +72,9 @@ module.exports = {
     ],
     resolve: {
         extensions: [ '.coffee', '.js' ],
+        fallback: {
+            "path": false,
+            "fs": false,
+        },
     }
 };

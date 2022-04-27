@@ -15,4 +15,5 @@ options = {
   typeSpeed: 40,
 }
 
-typed = new Typed('#description', options)
+if document.getElementById('description')
+  typed = new Typed('#description', options)

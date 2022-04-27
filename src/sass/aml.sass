@@ -7,7 +7,7 @@
   display: flex
   flex-direction: column
 
-  position: absolute
+  position: fixed
   width: 75%
   height: 100%
   top: 0%
@@ -32,6 +32,11 @@
 
     background-image: url("../../res/pfp.png")
     background-size: contain
+
+    transition: transform 150ms ease-in-out
+
+    &:hover
+      transform: scale(1.2)
 
   #title
     font-size: 64px
@@ -71,17 +76,17 @@
 
     margin: 8px
 
-  .line
-    font-size: 26px
-    font-family: 'Inconsolata', sans-serif
+.line
+  font-size: 26px
+  font-family: 'Inconsolata', sans-serif
 
-    &::before, &::after
-      display: inline-block
-      content: ""
-      border-top: 1px solid black
-      width: 4rem
-      margin: 0 1rem
-      transform: translateY(-0.4rem)
+  &::before, &::after
+    display: inline-block
+    content: ""
+    border-top: 1px solid black
+    width: 4rem
+    margin: 0 1rem
+    transform: translateY(-0.4rem)
 
 .aml-button
   width: 72px

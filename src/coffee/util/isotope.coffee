@@ -1,6 +1,6 @@
 jQueryBridget = require('jquery-bridget')
 Isotope = require('isotope-layout')
-jQueryBridget( 'isotope', Isotope, $ )
+jQueryBridget('isotope', Isotope, $)
 
 require("../../sass/isotope.sass")
 

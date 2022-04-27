@@ -1,0 +1,55 @@
+#help
+  display: flex
+  flex-wrap: wrap
+
+  position: fixed
+
+  .box
+    display: flex
+
+    max-width: fit-content
+    flex-direction: column
+    flex-wrap: wrap
+
+    align-items: center
+
+    margin: 15px
+    padding: 5px
+
+    width: 50%
+    height: 100%
+
+    background: white
+
+.wide-button
+  margin: 5px
+  padding: 10px
+  border: solid 2px
+
+  align-self: stretch
+
+  text-align: center
+
+  cursor: pointer
+
+  transition: transform 150ms ease-in-out
+
+  --shadow-offset: 8
+
+  .title
+    color: black
+
+    font-size: 18px
+    font-family: 'Inconsolata', sans-serif
+
+  a
+    text-decoration: none
+
+  img
+    margin-left: 8px
+
+    width: 32px
+    height: 32px
+
+  &:hover
+      transform: scale(1.05)
