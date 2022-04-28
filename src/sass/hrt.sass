@@ -1,22 +1,23 @@
 #help
   display: flex
-  flex-wrap: wrap
 
   position: fixed
 
   .box
+    overflow-y: scroll
+
     display: flex
 
-    max-width: fit-content
     flex-direction: column
-    flex-wrap: wrap
+    min-width: min-content
+    min-height: min-content
 
     align-items: center
 
     margin: 15px
     padding: 5px
 
-    width: 50%
+    width: calc(100 / 3)
     height: 100%
 
     background: white
@@ -53,3 +54,27 @@
 
   &:hover
       transform: scale(1.05)
+
+@media only screen and (orientation: portrait)
+  #help
+    flex-direction: row
+    flex-wrap: wrap
+
+    overflow-y: scroll
+
+    .box
+      overflow-y: hidden
+
+      width: 100%
+
+      height: unset
+      max-height: fit-content
+
+  .centre
+    position: fixed
+
+    width: 100%
+    height: 100%
+
+    top: 0%
+    left: 0%
