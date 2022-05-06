@@ -1,0 +1,4 @@
+mixin pic(image="", link="")
+    div&attributes(attributes)
+        a(href=`https://${link}`)
+          img(data-flickity-lazyload=`https://pbs.twimg.com/media/${image}?format=jpg&name=large`).button

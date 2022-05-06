@@ -3,6 +3,7 @@ require("../sass/index.sass")
 require("../sass/old.sass")
 require("../sass/aml.sass")
 require("../sass/hrt.sass")
+require("../sass/fits.sass")
 
 # scripts
     # coffeescript
@@ -14,6 +15,7 @@ require("./util/isotope.coffee")
 require("../js/dropshadow.js")
 require("../js/images.js")
 require("../js/parallax.js")
+require("../js/anchorload.js")
 
 # icons
   # black

@@ -1,0 +1,59 @@
+doctype html
+
+html
+    head
+        title="abbie.pet"
+        meta(charset="UTF-8")
+
+        script(
+        async data-href="https://github.com/DeflatedPickle/abbie.pet"
+        data-label="Pet me"
+        data-target="_blank"
+        src="https://unpkg.com/github-corners@latest/dist/embed.min.js"
+        )
+
+    body
+        include mixin/button
+        include mixin/pic
+        
+        div#back.parallax
+        
+        div#fits-info.shadow
+          p(id="#sweaters").line sweaters
+          div.carousel
+              +pic("FR1u815WQAA2ckz", "momokakkoii.com/collections/tops-1/products/froggy-furniture-hoodie").carousel-cell
+              +pic("FQLKvLqX0Aw3zEJ", "www.omocat-shop.com/collections/sweaters-1/products/a-home-for-flowers-sweater").carousel-cell
+              +pic("FOOJBdeXsAE08Pi", "www.omocat-shop.com/collections/jackets/products/sudden-rain-hoodie").carousel-cell
+              +pic("FKl5U_SXsAAIk-I", "www.omocat-shop.com/collections/sweaters-1/products/roses-sweater").carousel-cell
+              +pic("FJ8ZLlqXMAExOLJ", "www.omocat-shop.com/collections/sweaters-1/products/nursebunny-sweater").carousel-cell
+              +pic("FJTQ43cXsAInG_0", "dismiss.store/collections/snale/products/real-capybara-hours-t-shirt").carousel-cell
+              +pic("FIWkKayXoAQwrAV", "www.omocat-shop.com/collections/sweaters-1/products/bunnygirl-black-sweater").carousel-cell
+              +pic("FGkr3RUX0AIOkzV", "www.omocat-shop.com/collections/sweaters-1/products/school-dissection-sweater").carousel-cell
+              +pic("FGi_T6uWYAIlzmh", "abbie.pet/404").sold-out.carousel-cell
+          
+          p(id="#t-shirts").line t-shirts
+          div.carousel
+              +pic("FR6C_VWX0AAoxYh", "merch.gamegrumps.com/collections/sold-out/products/game-gyaru-shoujo-unisex-long-sleeve-t-shirt").carousel-cell
+              +button("FR6C_lzXoAASNqd", "merch.gamegrumps.com/collections/sold-out/products/game-gyaru-heroes-mens-shirt").carousel-cell
+              +pic("FQ9TZW7XwAAgI8g", "umaiclothing.com/collections/t-shirts/products/experiment-t-shirt").carousel-cell
+              +pic("FQ9TZpfWYAMuw2Y", "umaiclothing.com/collections/t-shirts/products/lapse-of-memory-t-shirt").carousel-cell
+              +pic("FQ9TZ7CWQAQ9Klg", "umaiclothing.com/collections/t-shirts/products/reminiscence-color-t-shirt").carousel-cell
+              +pic("FLWSlR_XoAEm3sv", "abbie.pet/404").sold-out.carousel-cell
+              +pic("FGi_Tk4WQAAvCbb", "umaiclothing.com/collections/t-shirts/products/ongaku-mk-ii-t-shirt").carousel-cell
+              +pic("FGi_TvDXsAIP3HJ", "umaiclothing.com/collections/long-sleeves/products/gg-long-sleeve").carousel-cell
+          
+          p(id="#tigh-highs").line thigh highs
+          div.carousel
+              +pic("FSGvPouXIAcZCHF", "www.aliexpress.com/item/1005002878414872.html").carousel-cell
+              +pic("FSGvY0HWYAMfNB4", "www.aliexpress.com/item/1005002878414872.html").carousel-cell
+              +pic("FLw92gVX0AEmQgC", "www.aliexpress.com/item/4000247953862.html").carousel-cell
+              
+          p(id="#blankets").line blankets
+          div.carousel
+            +pic("FN-MQacXMAIKfBQ", "warmpeople.co/products/lostsoul").carousel-cell
+          
+          p(id="#plushies").line plushies
+          div.carousel
+            +pic("FSGn01ZWUAEX4Xl", "www.ikea.com/gb/en/p/blahaj-soft-toy-shark-30373588").carousel-cell
+            +pic("FQvqw7qWQA0PQLm", "abbie.pet/404").carousel-cell
+            +pic("FR1vVz5XIAAO6I5", "abbie.pet/404").carousel-cell
