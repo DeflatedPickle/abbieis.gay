@@ -2,6 +2,6 @@ mixin button(field="", link="", type="logo", ext="svg")
     div&attributes(attributes)
         a(href=`https://${link}`)
             if (type != "")
-                //img(src=`../../res/${type}/${field}.${ext}`).button
+                img(src=`../../res/${type}/${field}.${ext}`).button
             else
                 div.title.button= field
