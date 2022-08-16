@@ -54,6 +54,7 @@ require("../../res/logo/tc-colour.svg")
 require("../../res/logo/tgring.svg")
 require("../../res/logo/transmap.svg")
 require("../../res/logo/gkit.svg")
+require("../../res/logo/diyhrtmarket-colour.svg")
 
 require("../../res/logo/deviantart-colour.svg")
 require("../../res/logo/sketchfab-colour.svg")
