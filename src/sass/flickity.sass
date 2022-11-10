@@ -58,13 +58,14 @@
         grid-column: 1
         grid-row: 1
 
-        font-size: 18px
+        font-size: 32px
         font-family: 'Roboto Mono', sans-serif
 
     .description
         grid-column: 1 / 2
         grid-row: 2
 
+        font-size: 18px
         font-family: 'Inconsolata', sans-serif
 
     .link
@@ -73,15 +74,16 @@
 
 @media only screen and (orientation: portrait)
   .carousel-cell
+    width: 80%
     height: 96%
 
     border-width: 0.2em
 
     .title
-      font-size: 48px
+      font-size: 72px
 
     .description
-      font-size: 24px
+      font-size: 40px
 
   .flickity-button
     .flickity-button-icon
@@ -95,5 +97,8 @@
 
   .flickity-page-dots
     .dot
+      height: 2em
+      width: 2em
+
       &:hover
         transform: unset

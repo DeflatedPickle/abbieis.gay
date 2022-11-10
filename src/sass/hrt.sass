@@ -11,7 +11,7 @@
 
     flex-grow: 1
     flex-direction: column
-    
+
     min-width: min-content
     min-height: min-content
 
@@ -38,6 +38,7 @@
   align-self: stretch
 
   text-align: center
+  text-decoration: none
 
   cursor: pointer
 
@@ -51,9 +52,6 @@
     font-size: 18px
     font-family: 'Inconsolata', sans-serif
 
-  a
-    text-decoration: none
-
   img
     margin-left: 8px
 
@@ -61,7 +59,18 @@
     height: 32px
 
   &:hover
-      transform: scale(1.05)
+    transform: scale(1.05)
+
+.button-container
+  display: flex
+
+  flex-direction: row
+  justify-content: center
+
+  align-self: stretch
+
+  .wide-button
+    flex-grow: 1
 
 @media only screen and (orientation: portrait)
   .line
@@ -80,7 +89,7 @@
     .box
       overflow-y: hidden
 
-      width: 100%
+      width: 95%
 
       height: unset
       max-height: fit-content
@@ -90,7 +99,7 @@
     height: 8em
 
     &:hover
-        transform: unset
+      transform: unset
 
     .title
       margin-left: 1em
