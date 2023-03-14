@@ -46,7 +46,7 @@
   "homepage": "https://github.com/DeflatedPickle/abbie.pet#readme",
   "devDependencies": {
     "jquery-bridget": "^3.0.1",
-    "webpack": "^5.66.0",
+    "webpack": "^5.76.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3"
   }
